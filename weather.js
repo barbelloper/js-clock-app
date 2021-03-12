@@ -10,12 +10,16 @@ function getWeather(lat, lng) {
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric`
   )
     .then(function (response) {
+      //console.log(response.json());
       return response.json();
     })
     .then(function (json) {
+      const weth = json.weather[0].main;
       const temp = json.main.temp;
       const place = json.name;
-      weather.innerText = `${temp} @ ${place}`;
+      const maxtmp = json.main.temp_max;
+      const mintmp = json.main.temp_min;
+      weather.innerText = `NoW : ${weth} ${temp}℃   ${place}\n ToP : ${maxtmp}℃  BottoM : ${mintmp}℃ `;
     });
 }
 

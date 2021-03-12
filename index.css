@@ -1,3 +1,12 @@
+* :not(input) {
+  font-family: "DotGothic16", sans-serif;
+  font-family: "Fascinate", cursive;
+  font-family: "Righteous", cursive;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
 .form,
 .greetings {
   display: none;
@@ -22,4 +31,80 @@
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s ease-in-out;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  font-size: 80px;
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.greetings {
+  margin-top: -30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.div__toDoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.toDoFrom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.toDoForm input {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.toDoForm input:focus {
+  will-change: transform;
+  transform: scaleX(1.1) scaleY(1.1);
+  border-radius: 10px;
+}
+button:focus {
+  outline: none;
+}
+.toDoList {
+  margin-top: 30px;
+  list-style: none;
+}
+.toDoList__delBtn {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  background-color: black;
+}
+
+.toDoList__li {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+.toDoList .toDoList__text {
+  font-size: 20px;
+}
+.weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
