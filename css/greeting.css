@@ -1,0 +1,12 @@
+.name-form,
+.greetings {
+  display: none;
+}
+.showing {
+  display: block;
+}
+.greetings {
+  margin-top: -30px;
+  font-size: 30px;
+  font-weight: bold;
+}

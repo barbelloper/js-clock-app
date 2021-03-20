@@ -1,0 +1,98 @@
+.div__toDoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.toDoFrom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-list {
+  position: relative;
+  margin-top: 30px;
+  padding: 20px 100px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+@keyframes comeleft {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes comeright {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.all-list__common {
+  box-shadow: var(--main-shadow);
+  opacity: 0.7;
+  padding: 10px 30px;
+  border-radius: 80px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.all-list__common:hover {
+  box-shadow: none;
+  background-color: black;
+  opacity: 1;
+}
+.all-list__pending {
+  position: absolute;
+  left: -300px;
+  top: -300px;
+  border-top-left-radius: 0px;
+  animation: comeleft 1s linear;
+}
+
+.all-list__finished {
+  will-change: animation;
+  position: absolute;
+  right: -300px;
+  top: 50px;
+  border-top-right-radius: 0px;
+  animation: comeright 1s linear;
+}
+.finishedList__backBtn {
+  color: white;
+}
+
+.all-list button {
+  margin: 2px;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: none;
+}
+.pendingList__delBtn:hover,
+.finishedList__delBtn:hover {
+  background-color: tomato;
+}
+.finishedList__backBtn:hover,
+.pendingList__checkBtn:hover {
+  background-color: greenyellow;
+}
+.finishedList__backBtn,
+.finishedList__delBtn,
+.pendingList__checkBtn,
+.pendingList__delBtn {
+  transition: background-color 0.5s ease-in-out;
+}
+.all-list span {
+  margin: 0px 3px;
+}

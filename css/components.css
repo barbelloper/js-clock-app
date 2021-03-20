@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  font-size: 80px;
+  color: white;
+}
