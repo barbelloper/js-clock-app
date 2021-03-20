@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Fascinate&family=Righteous&display=swap"
@@ -17,15 +17,24 @@
       <h1>00:00</h1>
     </div>
     <div class="main">
-      <form class="js-form form">
+      <form class="js-name-form name-form">
         <input type="text" placeholder="what is your name?? " />
       </form>
       <h4 class="js-greetings greetings"></h4>
       <div class="div__toDoForm">
         <form class="js-toDoForm toDoForm">
-          <input type="text" placeholder="Write a to do" />
+          <input placeholder="Write toDo!!" type="text" />
         </form>
-        <ul class="js-toDoList toDoList"></ul>
+        <div class="all-list">
+          <div class="all-list__pending all-list__common">
+            <h1>Come on! You have to do!</h1>
+            <ul class="js-pendingList pendingList"></ul>
+          </div>
+          <div class="all-list__finished all-list__common">
+            <h1>Greeeeat! You Done!</h1>
+            <ul class="js-finishedList finishedList"></ul>
+          </div>
+        </div>
       </div>
 
       <span class="js-weather weather"></span>

@@ -1,0 +1,33 @@
+@import "list.css";
+@import "greeting.css";
+@import "bgimage.css";
+@import "components.css";
+@import "variable.css";
+* :not(input) {
+  font-family: "DotGothic16", sans-serif;
+  font-family: "Fascinate", cursive;
+  font-family: "Righteous", cursive;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+input {
+  margin-top: 20px;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+input:focus {
+  will-change: transform;
+  transform: scaleX(1.1) scaleY(1.1);
+  border-radius: 10px;
+}
+button:focus {
+  outline: none;
+}
+
+li {
+  list-style-type: lower-roman;
+}
